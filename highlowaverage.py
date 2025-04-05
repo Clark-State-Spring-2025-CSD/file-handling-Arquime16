@@ -33,6 +33,16 @@ for line in total:
 total.close()
 print("Total sum of numbers:", total_sum)
 
+average = 0
+
+calculation = open("numbers.txt", "r")
+numbers = list(int(numbers.read().split()))
+if total_sum == sum(numbers):
+    count = len(numbers)
+    average = total_sum / count
+else:
+    print(f"The average is:", {average})
+
 
 
 

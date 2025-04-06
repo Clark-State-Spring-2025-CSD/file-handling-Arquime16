@@ -10,7 +10,6 @@
 
 #How many numbers in the file
 
-
 count = 0
 
 file = open("numbers.txt", "r")
@@ -21,6 +20,8 @@ for line in file:
 
 file.close()          
 print(f"Total numbers:", count)
+
+#Total of all the number
 
 total_sum = 0
 
@@ -33,15 +34,51 @@ for line in total:
 total.close()
 print("Total sum of numbers:", total_sum)
 
-average = 0
+#Average
 
-calculation = open("numbers.txt", "r")
-numbers = list(int(numbers.read().split()))
-if total_sum == sum(numbers):
-    count = len(numbers)
-    average = total_sum / count
-else:
-    print(f"The average is:", {average})
+
+myFile = open("numbers.txt")
+
+sum = 0
+myBudget = 0
+myMoney = 0
+myResult = 0
+myBank = 0
+myNumbers = 0
+
+for petLine in myFile:
+    veLine = int(petLine)
+    myBudget += 1 
+    sum += veLine
+    if veLine % 2 == 0:
+        myBank += 1
+    else:
+        myNumbers += 1
+    if veLine == 1:
+        myMoney += 1
+    if veLine == 493:
+        myResult += 1
+
+myFile.close()
+
+avg = sum / count 
+
+print(f"The average is {avg}.")
+
+#Highest number
+
+myFile = open("numbers.txt")
+
+maxValor = 0
+
+for x in myFile:
+    max = int(maxValor)
+    return(f"{maxValor}")
+
+
+
+
+
 
 
 

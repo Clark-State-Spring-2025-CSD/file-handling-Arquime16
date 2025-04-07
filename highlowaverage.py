@@ -69,12 +69,22 @@ print(f"The average is {avg}.")
 
 myFile = open("numbers.txt")
 
-maxValor = 0
+maxValue = None
+minValue = None
 
-for x in myFile:
-    max = int(maxValor)
-    return(f"{maxValor}")
 
+for line in myFile:
+    line = int(line.strip())
+    if maxValue is None or line > maxValue:
+        maxValue = line
+    if minValue is None or line < minValue:
+        minValue = line
+
+print(f"Number of Highest Value {maxValue}") 
+print(f"Number of Lowest Value {minValue}")  
+
+myFile.close()
+    
 
 
 

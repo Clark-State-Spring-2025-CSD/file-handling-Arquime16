@@ -7,6 +7,7 @@
 #Highest number
 #Lowest number
 #Correct answers for the included file:
+#reference for complete that assesment: https://www.w3schools.com/python/ref_keyword_none.asp and tutor.com
 
 #How many numbers in the file
 
@@ -65,7 +66,7 @@ avg = sum / count
 
 print(f"The average is {avg}.")
 
-#Highest number
+#Highest and Lowest number
 
 myFile = open("numbers.txt")
 

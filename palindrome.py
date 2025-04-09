@@ -3,6 +3,7 @@
 #For example, wow is a paldindrome.
 #A different file wile be used for grading.
 #Correct answer for this file: 
+#I used that reference for to do this assesment w3school.com aand tutor.com
 
 file = open("words.txt")
 

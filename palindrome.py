@@ -15,9 +15,6 @@ for line in file.readlines():
     print(f"{line}")
     
 print(f"{count}")
-
-    
- 
     
 file.close()
     
